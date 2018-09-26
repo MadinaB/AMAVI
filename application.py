@@ -8,35 +8,44 @@ def main():
     return showAll('family')
 
 # Show all families sorted by some option
-@app.route('/option/<option>')
-def showAll(option):
-    return 'these are all families sorted by '+ option
+@app.route('/option/<the_option>')
+def showAll(the_option):
+    #return 'these are all families sorted by '+ the_option
+    return render_template('main_page.html', option=the_option)
+
 
 # Show one family
 @app.route('/family/<family>')
 def showOne(family):
-    return 'this is '+ family
+    #return 'this is '+ family
+    return render_template('showOne.html')
+
 
 
 # Login
-@app.route('/veni/login')
+@app.route('/login')
 def login():
-    return 'login or signup redirect is here'
+    #return 'login or signup redirect is here'
+    return render_template('login.html')
 
 # Signup
-@app.route('/veni/signup')
+@app.route('/signup')
 def signup():
-    return 'Signup'
+    #return 'Signup'
+    return render_template('signup.html')
 
 # My page
 @app.route('/veni')
+@app.route('/my')
 def my():
-    return 'This is my page. I can edit all the stuff here.'
+    #return 'This is my page. I can edit all the stuff here.'
+    return render_template('my.html')
 
 # List all users present
 @app.route('/vidi')
 def listFamilies():
-    return 'These is list of all families sorted alphabetically'
+    #return 'These is list of all families sorted alphabetically'
+    return render_template('vidi.html')
 
 
 

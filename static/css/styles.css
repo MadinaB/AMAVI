@@ -1,0 +1,146 @@
+.header_back{
+  margin: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.droptxt{
+  color: #FBC702;
+  font-family: "Comic Sans MS";
+}
+
+.dropbtn {
+    float: right;
+    background-color: #FFFFFF;
+    color: #A9A9A9;
+    padding: 16px;
+    font-size: 16px;
+    font-family: "Garamond";
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    color: #A9A9A9;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.veni{
+  color: #C7CEEA;
+}
+
+.vidi{
+  color: #B5EAD7;
+}
+
+.amavi{
+  color: #FFDAC1;
+}
+
+.before{
+  display:inline;
+  color: #A9A9A9;
+  font-size: 30px;
+  font-family: "Lucida Console";
+}
+.after{
+ display:none;
+ color: #FFB7B2;
+ font-size: 30px;
+ font-family: "Lucida Console";
+}
+.item:hover span.before{
+ display:none;
+}
+.item:hover span.after{
+ display:inline-block;
+}
+
+.header_logo{
+  color: grey;
+  font-size: 30px;
+  font-family: "Lucida Console";
+}
+
+.header_text{
+  color: grey;
+  font-size: 18px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 50px auto auto auto;
+  padding: 8px;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.avatar-img {
+  max-width: 150px;
+  max-height: 150px;
+  padding: 10px;
+  border-radius: 50%;
+  margin: auto auto auto auto;
+}
+
+.button-img {
+  color: transparent;
+  max-width: 30px;
+  max-height: 30px;
+  padding: 3px;
+  border-radius: 50%;
+  margin: auto auto auto auto;
+}
+
+.central-text {
+    padding: 3px;
+    text-align: center;
+    margin: auto auto auto auto;
+}
+
+.a{
+  all: unset;
+}
+
+
+.invisible-change-button-div {
+}
+
+.invisible-change-button {
+  display: none;
+}
+
+.invisible-change-button-div:hover .invisible-change-button {
+  all: unset;
+  outline: 0;
+}
