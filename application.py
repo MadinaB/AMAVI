@@ -1,6 +1,17 @@
 from flask import Flask, render_template, request, redirect, jsonify, url_for, flash
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from database_setup import Family, Base
 
 app = Flask(__name__)
+
+APPLICATION_NAME = "AMAVI"
+
+# Database session setup
+engine = create_engine('sqlite:///amavi.db')
+Base.metadata.bind = engine
+DBSession = sessionmaker(bind=engine)
+session = DBSession()
 
 # Show main page: show all 
 @app.route('/')
@@ -11,7 +22,8 @@ def main():
 @app.route('/option/<the_option>')
 def showAll(the_option):
     #return 'these are all families sorted by '+ the_option
-    return render_template('main_page.html', option=the_option)
+    families = session.query(Family)
+    return render_template('main_page.html', families=families, option=the_option)
 
 
 # Show one family

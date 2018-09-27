@@ -100,6 +100,44 @@
   text-align: center;
 }
 
+.row {
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+}
+
+.column1 {
+  margin: 10px;
+  padding: 10px;
+  display:inline-block;
+  min-width: 350px;
+  min-height: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.column2 {
+  margin: 10px;
+  padding: 10px;
+  display:inline-block;
+  min-width: 350px;
+  min-height: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.column3 {
+  margin: 10px;
+  padding: 10px;
+  display:inline-block;
+  min-width: 350px;
+  min-height: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.photo_card{
+  max-width: 300px;
+  max-height: 300px;
+  padding: 10px;
+  margin: auto auto auto auto;
+}
+
 .title {
   color: grey;
   font-size: 18px;

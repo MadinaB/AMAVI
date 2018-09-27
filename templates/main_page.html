@@ -1,5 +1,41 @@
 {% extends "main.html" %}
 {% block content %}
 {% include "header.html" %}
-<h1> This is main_page </h1>
+
+	{% if families !=[] %}
+        </br>
+        </br>
+        
+       
+        {% for family in families %} 
+        	
+        	 {% if  loop.index%3 == 1: %}
+        		<div class="row">
+        	 		<div class="column1">
+        	 			{% if family %}
+        	 				<h3>{{family.name}}</h3>
+        	 				 <h2> <img class="photo_card" src="{{family.family_img}}"></h2> 
+        	 			{% endif %}
+        	 		</div>
+
+        	 {% elif  loop.index%3 == 2: %}
+        	 		<div class="column2">
+        	 			{% if family %}
+        	 				<h3>{{family.name}}</h3>
+        	 			{% endif %}
+        	 		</div>
+
+        	 {% elif  loop.index%3 == 0: %}
+        	 		<div class="column3">
+        	 			{% if family %}
+        	 				<h3>{{family.name}}</h3>
+        	 			{% endif %}
+        	 		</div>
+        	 	</div>
+        	{% endif %}
+        	
+        {% endfor %}
+ {% endif %}
+
+        
 {% endblock %}
