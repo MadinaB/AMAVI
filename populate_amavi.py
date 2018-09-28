@@ -28,9 +28,9 @@ session.commit()
 
 
 User2 = Family(
-    name="Murad2 family",
-    family_img="https://static.dollarstreet.org/media/Jordan%204/image/4b265912-3ffb-4d92-8b36-e7fa6e70fd5b/desktops-4b265912-3ffb-4d92-8b36-e7fa6e70fd5b.jpg",
-    email="MuradSomeMail@gmail.com",
+    name="Dudakova family",
+    family_img="https://static.dollarstreet.org/media/Ukraine%201/image/b4f92c42-7523-49e7-a45f-8b125eb23dec/desktops-b4f92c42-7523-49e7-a45f-8b125eb23dec.jpg",
+     email="MuradSomeMail@gmail.com",
     country="Jordan",
     description="The Murad family lives in Ammani",
     favorite_thing="MacBook computer",
@@ -46,8 +46,8 @@ session.commit()
 
 
 User3 = Family(
-    name="Murad3 family",
-    family_img="https://static.dollarstreet.org/media/Jordan%204/image/4b265912-3ffb-4d92-8b36-e7fa6e70fd5b/desktops-4b265912-3ffb-4d92-8b36-e7fa6e70fd5b.jpg",
+    name="Xi family",
+    family_img="https://static.dollarstreet.org/media/China%208/image/4b877748-ebf0-4c0b-8c7b-cdbd029e56be/desktops-4b877748-ebf0-4c0b-8c7b-cdbd029e56be.jpg",
     email="MuradSomeMail@gmail.com",
     country="Jordan",
     description="The Murad family lives in Ammani",
@@ -60,6 +60,31 @@ User3 = Family(
     hand_img="https://static.dollarstreet.org/media/Jordan%204/image/facf911d-3645-4893-8370-e81dba2a44dc/desktops-facf911d-3645-4893-8370-e81dba2a44dc.jpg")
 	
 session.add(User3)
+session.commit()
+
+
+
+User4 = Family(
+	name="Murad3 family",
+    family_img="https://static.dollarstreet.org/media/Jordan%204/image/4b265912-3ffb-4d92-8b36-e7fa6e70fd5b/desktops-4b265912-3ffb-4d92-8b36-e7fa6e70fd5b.jpg",
+    )
+session.add(User4)
+session.commit()
+
+
+
+User5 = Family(name="Murad3 family",
+    family_img="https://static.dollarstreet.org/media/Jordan%204/image/4b265912-3ffb-4d92-8b36-e7fa6e70fd5b/desktops-4b265912-3ffb-4d92-8b36-e7fa6e70fd5b.jpg",
+    )
+session.add(User5)
+session.commit()
+
+
+
+User6 = Family(name="Murad3 family",
+    family_img="https://static.dollarstreet.org/media/Jordan%204/image/4b265912-3ffb-4d92-8b36-e7fa6e70fd5b/desktops-4b265912-3ffb-4d92-8b36-e7fa6e70fd5b.jpg",
+    )
+session.add(User6)
 session.commit()
 
 print "DB is populated"

@@ -132,8 +132,9 @@
 }
 
 .photo_card{
-  max-width: 300px;
-  max-height: 300px;
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
   padding: 10px;
   margin: auto auto auto auto;
 }
