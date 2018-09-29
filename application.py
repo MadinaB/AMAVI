@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, jsonify, url_for, flash
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, scoped_session
 from database_setup import Family, Base
 
 app = Flask(__name__)
@@ -10,7 +10,7 @@ APPLICATION_NAME = "AMAVI"
 # Database session setup
 engine = create_engine('sqlite:///amavi.db')
 Base.metadata.bind = engine
-DBSession = sessionmaker(bind=engine)
+DBSession = scoped_session(sessionmaker(bind=engine))
 session = DBSession()
 
 # Show main page: show all 
